@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Kit Joll"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "A short blog detailing topics interesting to me throughtout my PhD."
   links:
     - label: "London"
       icon: "fa fa-fw fa-map-marker"
@@ -68,7 +68,7 @@ author:
     - label: "UCL PhD in Physics"
       icon: "fa fa-fw fa-university"
       url: ""
-    - label: "Ox (MChem)"
+    - label: "Oxford University (MChem)"
       icon: "fa fa-graduation-cap"
       url: ""
     - label: "GitHub"
