@@ -11,7 +11,7 @@ tags:
   - Electronic Structure
 ---
 
-##### THIS ARTICLE IS A DRAFT #############
+THIS ARTICLE IS A DRAFT
 
 Atomisitic computer simulations enable investigations of various complex physical systems ranging across physics, chemistry, biochemistry and materials sciece. Historically, there have been many ways to describe the interatomic potential in order to perform molecular dynamics simulations, including: emperical potentials (analytical approximations of the interatomic potential), semi-empirical potentials (some quantum mechanical features used to form the fit a potential), ab initio (first principles) quantum mechanical based potentials and hybrid quantum/classic molecular dynamics.
 
