@@ -34,6 +34,13 @@ Many different methodologies exist to generate Neural Network Potentials. Crucia
 
 Throughout the course of my PhD I will explore the field of neural network potentials, apply them to metal oxide/water interfaces for electrode development and develop novel workflows where applicable and necessary. 
 
+## Further reading 
+
+Four Generations of High-Dimensional Neural Network Potentials
+Jörg Behler
+Chemical Reviews 2021 121 (16), 10037-10072
+[DOI: 10.1021/acs.chemrev.0c00868](https://pubs.acs.org/doi/full/10.1021/acs.chemrev.0c00868)
+
 
 
 
