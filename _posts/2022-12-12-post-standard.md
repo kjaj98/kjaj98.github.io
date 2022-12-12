@@ -41,6 +41,8 @@ Jörg Behler
 Chemical Reviews 2021 121 (16), 10037-10072
 [DOI: 10.1021/acs.chemrev.0c00868](https://pubs.acs.org/doi/full/10.1021/acs.chemrev.0c00868)
 
+Marx, Dominik, and Jurg Hutter. "Ab initio molecular dynamics: Theory and implementation." Modern methods and algorithms of quantum chemistry [1.301-449 (2000): 141.](https://juser.fz-juelich.de/record/44687/files/NIC-Band-1.pdf#page=311)
+
 
 
 
