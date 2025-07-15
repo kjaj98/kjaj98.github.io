@@ -1,26 +1,28 @@
-/* 1) Global reset + full‐page blue + white text */
+/* 1) Global reset + full‐page blue background + white text */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
-  min-height: 100vh;               /* allow body to grow */
-  background-color: #0057B8;       /* one blue everywhere */
-  color: white;                    /* all text white by default */
+html {
+  background-color: #0057B8;
+}
+
+body {
+  min-height: 100vh;
+  color: white;
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
-/* 2) Hero / landing section */
+/* 2) Hero / landing section (no padding) */
 .landing-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1rem;              /* responsive padding */
-  /* no fixed heights here */
+  height: 100vh;   /* full viewport */
 }
 
 /* Profile image */
@@ -43,7 +45,7 @@ html, body {
   margin-top: 0.5rem;
 }
 
-/* 3) Social icons */
+/* 3) Social icons (tightened spacing) */
 .social_icons {
   list-style: none;
   margin: 0;
@@ -57,7 +59,8 @@ html, body {
 
 .social-logo {
   width: 2.5rem;
-  filter: brightness(0) invert(1);
+  /* force inversion to white on blue */
+  filter: brightness(0) invert(1) !important;
 }
 
 /* Links */
@@ -74,22 +77,23 @@ a:focus {
   margin-right: 0.3rem;
 }
 
-/* 4) About section */
+/* 4) About section (no padding, left‐aligned body, centered heading) */
 .about {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: left;     /* body copy will be left-aligned */
+  margin: 1rem auto;           /* small gap from hero */
+  text-align: left !important; /* body text left‐aligned */
   line-height: 1.6;
 }
 
 .about h2 {
-  text-align: center;   /* only the title is centered */
-}
-.about p + p {
-  margin-top: 1.5rem;
+  text-align: center !important;  
+  margin-bottom: 1.5rem;
 }
 
+/* more space between paragraphs */
+.about p {
+  margin-bottom: 1.5rem;
+}
 
 /* 5) Responsive font‐size tweaks */
 @media (max-width: 600px) {
