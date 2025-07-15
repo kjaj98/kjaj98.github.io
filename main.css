@@ -18,6 +18,7 @@ body {
 
 /* 2) Hero / landing section (no padding) */
 .landing-page {
+  margin-top: 2rem;  /* add this line */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +28,7 @@ body {
 
 /* Profile image */
 .profile_image {
+  margin-top: 2rem;  /* add this line */
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
