@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of viewport */
+  background-color: #FA434B;
+  flex-direction: column;
+}
+
+.profile_image {
+  width: 10em; /* Adjust the width of the image */
+  height: 10em; /* Adjust the height of the image */
+  border-radius: 50%; /* Make the image circular */
+  margin-top: 4em;
+  margin-bottom: 1em; /* Add some space between the image and the content */
+}
+/* Typography */
+.title {
+  font-size: 4em;
+}
+
+h1 {
+  margin: 0;
+}
+
+.description {
+  display: block;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.social_icons li {
+  display: inline-block;
+  margin: 1em; /* Adjust as needed */
+}
+
+@media (max-width: 60rem) {
+  html { font-size: 75%;}
+}
+/*
+@media (max-width: 35rem) {
+  html { font-size: 45%;}
+}
+*/
+/*border-bottom: 0.15em solid #222222; /* Change the color of the underline */
+/* Social Media Icons  */
+
+.social_icons a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  opacity: 0.7;
+}
+
+.social-logo {
+  width: 3.5em;
+}
+
+.description a {
+  color: white;
+  text-decoration: none;
+}
+
+.link-icon {
+  font-size: smaller; /* Adjust the size of the icon */
+  margin-right: 2px; /* Adjust as needed to control spacing between icon and link text */
+}
