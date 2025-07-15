@@ -1,96 +1,89 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
+/* 1) Full-page blue + white text */
+html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
+  background-color: #0057B8;
   color: white;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
+/* 2) Hero section */
 .landing-page {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full height of viewport */
-  background-color: #0057B8;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   flex-direction: column;
 }
 
+/* profile image */
 .profile_image {
-  width: 10em; /* Adjust the width of the image */
-  height: 10em; /* Adjust the height of the image */
-  border-radius: 50%; /* Make the image circular */
-  margin-top: 4em;
-  margin-bottom: 1em; /* Add some space between the image and the content */
-}
-/* Typography */
-.title {
-  font-size: 4em;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 4em 0 1em;
 }
 
-h1 {
+/* title */
+.title {
+  font-size: 4em;
   margin: 0;
 }
 
+/* description under title */
 .description {
-  display: block;
   font-size: 1.5em;
   padding-top: 0.5em;
 }
 
-ul {
+/* social icons row */
+.social_icons {
+  list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1em 0;
 }
-
 .social_icons li {
   display: inline-block;
-  margin: 1em; /* Adjust as needed */
+  margin: 0 1em;
 }
-
-@media (max-width: 60rem) {
-  html { font-size: 75%;}
-}
-/*
-@media (max-width: 35rem) {
-  html { font-size: 45%;}
-}
-*/
-/*border-bottom: 0.15em solid #222222; /* Change the color of the underline */
-/* Social Media Icons  */
-
-.social_icons a {
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  opacity: 0.7;
-}
-
 .social-logo {
   width: 3.5em;
+  filter: brightness(0) invert(1); /* ensure white icons */
 }
 
-.description a {
+/* link colors/icons */
+.description a,
+a {
   color: white;
   text-decoration: none;
 }
-
+a:hover,
+a:focus {
+  opacity: 0.7;
+}
 .link-icon {
-  font-size: smaller; /* Adjust the size of the icon */
-  margin-right: 2px; /* Adjust as needed to control spacing between icon and link text */
+  font-size: smaller;
+  margin-right: 2px;
 }
 
+/* 3) About section */
 .about {
-  background-color: #0057B8;  /* same rich blue as your hero */
-  color: white;               /* ensure the text is visible */
-  padding: 4rem 1rem;         /* some vertical breathing room */
-  text-align: left;           /* reset centering if you prefer left-aligned text */
-  max-width: 700px;           /* constrain line length for readability */
-  margin: 0 auto;             /* center it horizontally in the viewport */
+  padding: 4rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* 4) Responsive tweaks */
+@media (max-width: 60rem) {
+  html { font-size: 75%; }
+}
+@media (max-width: 35rem) {
+  .about, .landing-page {
+    padding: 2rem 1rem;
+  }
 }
 
