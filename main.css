@@ -80,10 +80,18 @@ a:focus {
 .about {
   max-width: 700px;
   margin: 0 auto;
-  padding: 1rem 1rem;
-  text-align: center;
+  padding: 1rem;
+  text-align: left;     /* body copy will be left-aligned */
   line-height: 1.6;
 }
+
+.about h2 {
+  text-align: center;   /* only the title is centered */
+}
+.about p + p {
+  margin-top: 1.5rem;
+}
+
 
 /* 5) Responsive font‐size tweaks */
 @media (max-width: 600px) {
