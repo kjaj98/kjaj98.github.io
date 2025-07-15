@@ -46,7 +46,7 @@ html, body {
 /* 3) Social icons */
 .social_icons {
   list-style: none;
-  margin: 1rem 0;
+  margin: 0 0;
   padding: 0;
 }
 
@@ -80,7 +80,7 @@ a:focus {
 .about {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   text-align: left;
   line-height: 1.6;
 }
