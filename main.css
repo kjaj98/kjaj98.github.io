@@ -108,7 +108,7 @@ a:focus {
 
 /* alternatively, you can reduce the About section’s top margin */
 .about {
-  margin: 0rem auto;  /* instead of 1rem auto */
+  margin: -4rem auto 1rem auto;
 }
 
 
