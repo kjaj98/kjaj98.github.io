@@ -103,12 +103,12 @@ a:focus {
 
 /* 2) Less space between icons and about section */
 .social_icons {
-  margin-bottom: 0rem; /* shrink this if you want them even closer */
+  margin-bottom: 0.5rem; /* shrink this if you want them even closer */
 }
 
 /* alternatively, you can reduce the About section’s top margin */
 .about {
-  margin: -4rem auto 1rem auto;
+  margin: -2rem auto 1rem auto;
 }
 
 
