@@ -1,24 +1,28 @@
-/* 1) Full-page blue + white text */
-html, body {
+/* 1) Full‐page blue background + white text */
+html {
+  background-color: #0057B8;
+}
+
+body {
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  background-color: #0057B8;
+  min-height: 100vh;          /* allow body to grow with content */
   color: white;
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
-/* 2) Hero section */
+/* 2) Hero / landing section */
 .landing-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh;               /* full viewport height */
   flex-direction: column;
+  background: transparent;     /* uses html’s background */
 }
 
-/* profile image */
+/* Profile image */
 .profile_image {
   width: 10em;
   height: 10em;
@@ -26,49 +30,55 @@ html, body {
   margin: 4em 0 1em;
 }
 
-/* title */
+/* Title */
 .title {
   font-size: 4em;
   margin: 0;
 }
 
-/* description under title */
+/* Description under title */
 .description {
   font-size: 1.5em;
   padding-top: 0.5em;
 }
 
-/* social icons row */
+/* 3) Social icons */
 .social_icons {
   list-style: none;
   padding: 0;
   margin: 1em 0;
 }
+
 .social_icons li {
   display: inline-block;
   margin: 0 1em;
 }
+
 .social-logo {
   width: 3.5em;
-  filter: brightness(0) invert(1); /* ensure white icons */
+  /* if your SVGs are dark, uncomment to invert them:
+  filter: brightness(0) invert(1);
+  */
 }
 
-/* link colors/icons */
+/* Links and icons */
 .description a,
 a {
   color: white;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   opacity: 0.7;
 }
+
 .link-icon {
   font-size: smaller;
   margin-right: 2px;
 }
 
-/* 3) About section */
+/* 4) About section */
 .about {
   padding: 4rem 1rem;
   max-width: 700px;
@@ -77,12 +87,14 @@ a:focus {
   line-height: 1.6;
 }
 
-/* 4) Responsive tweaks */
+/* 5) Responsive tweaks */
 @media (max-width: 60rem) {
   html { font-size: 75%; }
 }
+
 @media (max-width: 35rem) {
-  .about, .landing-page {
+  .about,
+  .landing-page {
     padding: 2rem 1rem;
   }
 }
