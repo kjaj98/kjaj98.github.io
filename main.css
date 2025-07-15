@@ -18,7 +18,7 @@ body {
 
 /* 2) Hero / landing section (no padding) */
 .landing-page {
-  margin-top: 2rem;  /* add this line */
+  margin-top: 4rem;  /* add this line */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@ body {
 
 /* Profile image */
 .profile_image {
-  margin-top: 2rem;  /* add this line */
+  margin-top: 4rem;  /* add this line */
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -97,13 +97,28 @@ a:focus {
   margin-bottom: 1.5rem;
 }
 
-/* 5) Responsive font‐size tweaks */
+/* Mobile adjustments for screens ≤ 600px */
 @media (max-width: 600px) {
-  .title {
-    font-size: 2rem;
+  .landing-page {
+    /* let it auto‐height instead of forcing 100vh */
+    height: auto;
+    padding: 1.5rem 1rem 2rem;  
+    justify-content: flex-start; /* start from the top */
   }
+
+  .profile_image {
+    width: 6rem;    /* smaller circle */
+    height: 6rem;
+    margin-top: 1rem; /* lighten the top gap */
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    font-size: 1.75rem;  /* scale down heading */
+  }
+
   .description {
-    font-size: 1rem;
+    font-size: 1rem;     /* scale down subhead */
   }
 }
 
