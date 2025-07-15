@@ -98,7 +98,7 @@ a:focus {
 }
 /* 1) More space between description and icons */
 .description {
-  margin-bottom: 4rem;  /* adjust up or down to taste */
+  margin-bottom: 8rem;  /* adjust up or down to taste */
 }
 
 /* 2) Less space between icons and about section */
