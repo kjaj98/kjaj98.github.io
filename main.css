@@ -84,3 +84,13 @@ a:hover, a:focus {
   font-size: smaller; /* Adjust the size of the icon */
   margin-right: 2px; /* Adjust as needed to control spacing between icon and link text */
 }
+
+.about {
+  background-color: #0057B8;  /* same rich blue as your hero */
+  color: white;               /* ensure the text is visible */
+  padding: 4rem 1rem;         /* some vertical breathing room */
+  text-align: left;           /* reset centering if you prefer left-aligned text */
+  max-width: 700px;           /* constrain line length for readability */
+  margin: 0 auto;             /* center it horizontally in the viewport */
+}
+
