@@ -57,9 +57,7 @@ html, body {
 
 .social-logo {
   width: 2.5rem;
-  /* if your SVGs are dark, uncomment below to invert them:
   filter: brightness(0) invert(1);
-  */
 }
 
 /* Links */
