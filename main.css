@@ -1,13 +1,14 @@
-/* 1) Full‐page blue background + white text */
-html {
-  background-color: #0057B8;
-}
-
-body {
+/* 1) Global reset + full‐page blue + white text */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-height: 100vh;          /* allow body to grow with content */
-  color: white;
+}
+
+html, body {
+  min-height: 100vh;               /* allow body to grow */
+  background-color: #0057B8;       /* one blue everywhere */
+  color: white;                    /* all text white by default */
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
@@ -15,87 +16,82 @@ body {
 /* 2) Hero / landing section */
 .landing-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;               /* full viewport height */
-  flex-direction: column;
-  background: transparent;     /* uses html’s background */
+  padding: 4rem 1rem;              /* responsive padding */
+  /* no fixed heights here */
 }
 
 /* Profile image */
 .profile_image {
-  width: 10em;
-  height: 10em;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-  margin: 4em 0 1em;
+  margin-bottom: 1rem;
 }
 
 /* Title */
 .title {
-  font-size: 4em;
+  font-size: 2.5rem;
   margin: 0;
 }
 
 /* Description under title */
 .description {
-  font-size: 1.5em;
-  padding-top: 0.5em;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 /* 3) Social icons */
 .social_icons {
   list-style: none;
+  margin: 2rem 0;
   padding: 0;
-  margin: 1em 0;
 }
 
 .social_icons li {
   display: inline-block;
-  margin: 0 1em;
+  margin: 0 0.5rem;
 }
 
 .social-logo {
-  width: 3.5em;
-  /* if your SVGs are dark, uncomment to invert them:
+  width: 2.5rem;
+  /* if your SVGs are dark, uncomment below to invert them:
   filter: brightness(0) invert(1);
   */
 }
 
-/* Links and icons */
-.description a,
+/* Links */
 a {
-  color: white;
+  color: inherit;
   text-decoration: none;
 }
-
 a:hover,
 a:focus {
-  opacity: 0.7;
+  opacity: 0.8;
 }
-
 .link-icon {
-  font-size: smaller;
-  margin-right: 2px;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
 }
 
 /* 4) About section */
 .about {
-  padding: 4rem 1rem;
   max-width: 700px;
   margin: 0 auto;
+  padding: 4rem 1rem;
   text-align: left;
   line-height: 1.6;
 }
 
-/* 5) Responsive tweaks */
-@media (max-width: 60rem) {
-  html { font-size: 75%; }
-}
-
-@media (max-width: 35rem) {
-  .about,
-  .landing-page {
-    padding: 2rem 1rem;
+/* 5) Responsive font‐size tweaks */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
   }
 }
 
