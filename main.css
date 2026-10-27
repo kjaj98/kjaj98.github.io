@@ -1,4 +1,4 @@
-/* 1) Global reset + full‐page blue background + white text */
+/* Global reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,51 +7,51 @@
 
 html {
   background-color: #0057B8;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   color: white;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
   text-align: center;
 }
 
-/* 2) Hero / landing section (no padding) */
+/* Hero / landing section */
 .landing-page {
-  margin-top: 4rem;  /* add this line */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;   /* full viewport */
+  min-height: 100svh;
+  padding: 2rem 1rem 3rem;
 }
 
 /* Profile image */
 .profile_image {
-  margin-top: 4rem;  /* add this line */
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 /* Title */
 .title {
-  font-size: 2.5rem;
-  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  letter-spacing: 0.02em;
 }
 
 /* Description under title */
 .description {
   font-size: 1.25rem;
   margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 
-/* 3) Social icons (tightened spacing) */
 .social_icons {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .social_icons li {
@@ -60,80 +60,70 @@ body {
 }
 
 .social-logo {
+  display: block;
   width: 2.5rem;
-  /* force inversion to white on blue */
   filter: brightness(0) invert(1) !important;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.social-logo:hover,
+.social-logo:focus-visible {
+  opacity: 0.75;
+  transform: translateY(-2px);
 }
 
 /* Links */
 a {
   color: inherit;
   text-decoration: none;
+  transition: opacity 160ms ease;
 }
+
 a:hover,
-a:focus {
+a:focus-visible {
   opacity: 0.8;
 }
+
 .link-icon {
   font-size: 0.8rem;
   margin-right: 0.3rem;
 }
 
-/* 4) About section (no padding, left‐aligned body, centered heading) */
+/* About section */
 .about {
-  max-width: 700px;
-  margin: 1rem auto;           /* small gap from hero */
-  text-align: left !important; /* body text left‐aligned */
-  line-height: 1.6;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  text-align: left;
+  line-height: 1.7;
 }
 
 .about h2 {
-  text-align: center !important;  
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1.5rem;
 }
 
-/* more space between paragraphs */
 .about p {
   margin-bottom: 1.5rem;
 }
-/* 1) More space between description and icons */
-.description {
-  margin-bottom: 6rem;  /* adjust up or down to taste */
-}
 
-/* 2) Less space between icons and about section */
-.social_icons {
-  margin-bottom: 0.5rem; /* shrink this if you want them even closer */
-}
-
-/* alternatively, you can reduce the About section’s top margin */
-.about {
-  margin: -2rem auto 1rem auto;
-}
-
-
-/* Mobile adjustments for screens ≤ 600px */
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .landing-page {
-    /* let it auto‐height instead of forcing 100vh */
-    height: auto;
-    padding: 1.5rem 1rem 2rem;  
-    justify-content: flex-start; /* start from the top */
+    min-height: auto;
+    padding: 1.5rem 1rem 2.5rem;
+    justify-content: flex-start;
   }
 
   .profile_image {
     width: 6rem;    /* smaller circle */
     height: 6rem;
-    margin-top: 1rem; /* lighten the top gap */
     margin-bottom: 0.75rem;
   }
 
-  .title {
-    font-size: 1.75rem;  /* scale down heading */
-  }
-
   .description {
-    font-size: 1rem;     /* scale down subhead */
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
   }
 }
-
